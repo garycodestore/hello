@@ -7,5 +7,7 @@ def foo(pathtosearch, filename):
 	else:
 		return False
 
-
-print foo(".", "hello")
+def foo2(pathname):
+	dirlist = os.listdir(pathname)
+	return dirlist
+print foo2(".")
